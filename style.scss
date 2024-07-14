@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+
+$locationFontColor: hsl(75, 94%, 57%);
+$bodyBackgroundColor: hsl(0, 0%, 8%);
+$cardBackgroundColor: hsl(0, 0%, 12%);
+$linkBackgroundColor: hsl(0, 0%, 20%);
+$regularFontColor: hsl(0, 0%, 100%);
+
+body {
+  height: 100dvh;
+  background: $bodyBackgroundColor;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
+  .cardContainer {
+    text-align: center;
+    background: $cardBackgroundColor;
+    padding: 20px;
+  }
+}
