@@ -29,6 +29,69 @@ body {
   .cardContainer {
     text-align: center;
     background: $cardBackgroundColor;
-    padding: 20px;
+    padding: 50px;
+    border-radius: 20px;
+
+    img {
+      width: clamp(50px, 30%, 100px);
+      border-radius: 50px;
+    }
+
+    .socialInfo {
+      margin: 20px auto;
+      padding: 0 30px;
+
+      h2 {
+        color: $regularFontColor;
+        margin: 0 auto 0 auto;
+      }
+
+      span {
+        font-size: clamp(0.875rem, 50%, 2rem);
+        color: $locationFontColor;
+        font-weight: 500;
+      }
+    }
+
+    p {
+      color: $regularFontColor;
+      font-size: clamp(0.625rem, 50%, 2rem);
+    }
+
+    .linkContainer {
+      ul {
+        padding: 0;
+      }
+      li {
+        list-style: none;
+        background-color: $linkBackgroundColor;
+        margin: 10px 0;
+        height: 30px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+      }
+
+      a {
+        display: block;
+        text-decoration: none;
+        color: $regularFontColor;
+        font-size: 0.75rem;
+        font-weight: 500;
+        width: 100%;
+        max-width: 100%;
+        min-height: 100%;
+        line-height: 60px;
+      }
+
+      li:hover {
+        background-color: $locationFontColor;
+        color: $cardBackgroundColor;
+      }
+
+      a:hover {
+        color: inherit;
+      }
+    }
   }
 }
